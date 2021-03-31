@@ -1,0 +1,6 @@
+venv/
+log
+__pycache__/
+.idea
+parses/__pycache__/
+utils/__pycache__/
