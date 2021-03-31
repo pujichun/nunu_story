@@ -49,7 +49,6 @@ def author_classification_list_parser(item: LinkItem):
         items = []
         for a in element_a:
             author = a.xpath('./text()')[0]
-            print(author)
             link = a.xpath('./@href')[0]
             link = urljoin(item.url, link)
             _item = StoryItem(author=author, url=link, callback="parses.author_book_list_page.author_book_list_page_parser")

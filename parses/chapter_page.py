@@ -20,7 +20,6 @@ def chapter_parser(item: StoryItem):
         for a in element_a:
             _item = deepcopy(item)
             chapter = a.xpath('./text()')[0]
-            print(chapter)
             link = a.xpath('./@href')[0]
             _item.chapter = chapter
             _item.url = urljoin(_item.url, link)
